@@ -1,0 +1,80 @@
+.publications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 20px;
+}
+
+.pub-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 28px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.pub-card:hover {
+  border-color: rgba(99, 102, 241, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-4px);
+}
+
+.pub-card__icon {
+  color: #6366f1;
+  margin-bottom: 16px;
+}
+
+.pub-card__title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.pub-card__desc {
+  font-size: 0.875rem;
+  color: #999;
+  line-height: 1.6;
+  flex: 1;
+  margin-bottom: 16px;
+}
+
+.pub-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pub-card__tag {
+  font-size: 0.75rem;
+  color: #6366f1;
+  background: rgba(99, 102, 241, 0.08);
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.publications-scholar {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #888;
+}
+
+.publications-scholar a {
+  color: #6366f1;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.publications-scholar a:hover {
+  color: #a78bfa;
+}
+
+@media (max-width: 640px) {
+  .publications-grid {
+    grid-template-columns: 1fr;
+  }
+}

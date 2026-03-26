@@ -1,0 +1,90 @@
+.education-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.education-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 28px;
+  transition: all 0.3s ease;
+}
+
+.education-card:hover {
+  border-color: rgba(99, 102, 241, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.education-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  gap: 16px;
+}
+
+.education-card__school {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.education-card__degree {
+  font-size: 0.95rem;
+  color: #6366f1;
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+.education-card__meta {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.education-card__period {
+  display: block;
+  font-size: 0.85rem;
+  color: #888;
+  font-weight: 500;
+}
+
+.education-card__location {
+  display: block;
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 2px;
+}
+
+.education-card__gpa {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 16px;
+}
+
+.education-card__courses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.education-card__course-tag {
+  font-size: 0.75rem;
+  color: #999;
+  background: rgba(99, 102, 241, 0.08);
+  border: 1px solid rgba(99, 102, 241, 0.15);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+@media (max-width: 640px) {
+  .education-card__header {
+    flex-direction: column;
+  }
+
+  .education-card__meta {
+    text-align: left;
+  }
+}

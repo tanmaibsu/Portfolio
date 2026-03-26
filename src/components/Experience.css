@@ -1,0 +1,135 @@
+.timeline {
+  position: relative;
+  padding-left: 32px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: linear-gradient(to bottom, #6366f1, rgba(99, 102, 241, 0.1));
+}
+
+.timeline__item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline__item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline__dot {
+  position: absolute;
+  left: -32px;
+  top: 8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #0a0a0a;
+  border: 3px solid #6366f1;
+  z-index: 1;
+}
+
+.timeline__card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 28px;
+  transition: all 0.3s ease;
+}
+
+.timeline__card:hover {
+  border-color: rgba(99, 102, 241, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateX(4px);
+}
+
+.timeline__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  gap: 16px;
+}
+
+.timeline__role {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.timeline__company {
+  font-size: 0.95rem;
+  color: #6366f1;
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+.timeline__projects {
+  font-size: 0.8rem;
+  color: #777;
+  margin-top: 4px;
+  font-style: italic;
+}
+
+.timeline__meta {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.timeline__period {
+  display: block;
+  font-size: 0.85rem;
+  color: #888;
+  font-weight: 500;
+}
+
+.timeline__location {
+  display: block;
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 2px;
+}
+
+.timeline__points {
+  list-style: none;
+  padding: 0;
+}
+
+.timeline__points li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: #aaa;
+  line-height: 1.6;
+}
+
+.timeline__points li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(99, 102, 241, 0.5);
+}
+
+.timeline__points li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 640px) {
+  .timeline__header {
+    flex-direction: column;
+  }
+
+  .timeline__meta {
+    text-align: left;
+  }
+}
