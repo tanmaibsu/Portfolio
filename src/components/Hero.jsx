@@ -19,7 +19,7 @@ function Hero() {
           <a href="mailto:tanmaighosh@u.boisestate.edu" className="hero__btn hero__btn--primary">
             Get in Touch
           </a>
-          <a href="https://github.com/tanmaighosh" target="_blank" rel="noopener noreferrer" className="hero__btn hero__btn--ghost">
+          <a href="https://github.com/tanmaibsu" target="_blank" rel="noopener noreferrer" className="hero__btn hero__btn--ghost">
             GitHub
           </a>
           <a href="https://www.linkedin.com/in/tanmai-ghosh-8556331a0/" target="_blank" rel="noopener noreferrer" className="hero__btn hero__btn--ghost">
